@@ -1,0 +1,67 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "antd": "^3.15.0",
+    "firebase": "^6.4.2",
+    "gatsby": "^2.1.30",
+    "gatsby-cli": "^2.6.4",
+    "gatsby-image": "^2.0.32",
+    "gatsby-plugin-create-client-paths": "^2.0.5",
+    "gatsby-plugin-import": "^2.1.4",
+    "gatsby-plugin-manifest": "^2.0.23",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.9",
+    "gatsby-plugin-sharp": "^2.0.27",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.24",
+    "gatsby-transformer-sharp": "^2.1.16",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-firebase-file-uploader": "^2.4.2",
+    "react-helmet": "^5.2.0",
+    "react-mathjax2": "0.0.2",
+    "recompose": "^0.30.0",
+    "styled-components": "^4.1.3",
+    "uniqid": "^5.0.3",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.11.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "output=\"\" \n while read line; do \n output+=\"${line} \" \n done <.env.axel \n len=${#output} && eval \"$output gatsby build\"",
+    "develop": "output=\"\" \n while read line; do \n output+=\"${line} \" \n done <.env.axel \n len=${#output} && eval \"$output gatsby develop\"",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint **/*.{js,jsx} --quiet",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

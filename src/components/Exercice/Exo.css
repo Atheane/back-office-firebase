@@ -1,0 +1,8 @@
+.ant-form-item-label {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 39.9999px;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: middle;
+}
