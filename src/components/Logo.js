@@ -19,7 +19,7 @@ const Image = () => (
       query {
         fileName: file(
           relativePath: {
-            eq: "images/MULMUG_Logo_Secondaire(Blanc)_sans_sous_titre_transparent_RVB.png"
+            eq: "images/gatsby-icon.png"
           }
         ) {
           childImageSharp {

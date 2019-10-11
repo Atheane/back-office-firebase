@@ -1,1 +1,1 @@
-## MulMug Back Office
+## Back Office with React and Firebase

@@ -168,7 +168,7 @@ const NewGradeForm = (props) => {
         {getFieldDecorator('available', {
           rules: [{ required: false }],
         })(
-            <Checkbox onChange={(e) => setAvailable(e.target.checked)}>Available in Mulmug mobile app?</Checkbox>)}
+            <Checkbox onChange={(e) => setAvailable(e.target.checked)}>Available in mobile app?</Checkbox>)}
         </Form.Item>
         <Form.Item
           label={

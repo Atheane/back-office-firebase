@@ -49,8 +49,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "output=\"\" \n while read line; do \n output+=\"${line} \" \n done <.env.axel \n len=${#output} && eval \"$output gatsby build\"",
-    "develop": "output=\"\" \n while read line; do \n output+=\"${line} \" \n done <.env.axel \n len=${#output} && eval \"$output gatsby develop\"",
+    "build": "output=\"\" \n while read line; do \n output+=\"${line} \" \n done <.env \n len=${#output} && eval \"$output gatsby build\"",
+    "develop": "output=\"\" \n while read line; do \n output+=\"${line} \" \n done <.env \n len=${#output} && eval \"$output gatsby develop\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
     "start": "npm run develop",

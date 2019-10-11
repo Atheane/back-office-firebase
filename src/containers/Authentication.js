@@ -9,28 +9,28 @@ export default ({ children }) => {
   const firebase = useContext(FirebaseContext);
   const { data: { rememberMe } } = useContext(StoreContext);
   useEffect(() => {
-    if (!localStorage.getItem('mulmug-user')) {
+    if (!localStorage.getItem('themakery-user')) {
       firebase.onAuthUserListener(
         user => {
           console.log('store.rememberMe', rememberMe);
-          if (rememberMe) localStorage.setItem('mulmug-user', JSON.stringify(user));
+          if (rememberMe) localStorage.setItem('themakery-user', JSON.stringify(user));
           setAuthUser(user);
         },
         () => {
-          localStorage.removeItem('mulmug-user');
+          localStorage.removeItem('themakery-user');
           setAuthUser(null);
         }
       )
     } else {
-      setAuthUser(JSON.parse(localStorage.getItem('mulmug-user')));
+      setAuthUser(JSON.parse(localStorage.getItem('themakery-user')));
       // if non-admin is redirected to sign-in
       firebase.onAuthUserListener(
         user => {
-          if (rememberMe) localStorage.setItem('mulmug-user', JSON.stringify(user));
+          if (rememberMe) localStorage.setItem('themakery-user', JSON.stringify(user));
           setAuthUser(user);
         },
         () => {
-          localStorage.removeItem('mulmug-user');
+          localStorage.removeItem('themakery-user');
           setAuthUser(null);
         }
       )

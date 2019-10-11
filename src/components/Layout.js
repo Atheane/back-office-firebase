@@ -4,7 +4,7 @@ import { Link } from "@reach/router"
 import { Layout, Menu, Breadcrumb, Icon, Row, Col } from 'antd';
 
 import { useResize } from '../hooks/customHooks';
-import logo from '../images/MULMUG_Logo_Secondaire(Blanc)_sans_sous_titre_transparent_RVB.png';
+import logo from '../images/gatsby-icon.png';
 import Navigation from './Navigation';
 import './Layout.css';
 import * as ROUTES from '../constants/routes';
@@ -45,7 +45,7 @@ const LayoutContainer = ({ children }) => {
                 <img
                   src={logo}
                   alt='logo'
-                  width='150px'
+                  width='90px'
                 />
               </Link>
               </Col>
@@ -134,7 +134,7 @@ const LayoutContainer = ({ children }) => {
               <span />
             </Col>
             <Col md={12} xs={22}>
-              contact@mulmug.com
+              contact@themakery.io
             </Col>
             <Col md={6} xs={1}>
               <span />

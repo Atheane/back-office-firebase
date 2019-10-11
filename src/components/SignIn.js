@@ -103,8 +103,8 @@ class SignInFormBase extends Component {
               >
                 Log in
               </Button>
-              {/* <span> Or </span> 
-              <Link to={ROUTES.SIGN_UP}> Register now!</Link> */}
+              <span> Or </span> 
+              <Link to={ROUTES.SIGN_UP}> Register now!</Link>
             </Form.Item>
 
           </Form>

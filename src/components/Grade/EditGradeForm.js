@@ -201,7 +201,7 @@ const EditGradeForm = (props) => {
             {<Checkbox
                 checked={available}
                 onChange={(e) => setAvailable(e.target.checked)}>
-                Available in Mulmug mobile app?
+                Available in mobile app?
               </Checkbox>}
             </Form.Item>
 

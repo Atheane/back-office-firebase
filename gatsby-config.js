@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `MulMug Back Office`,
-    description: `Gestion des contenus de l'application mobile MulMug`,
+    title: `Back Office`,
+    description: `Gestion des contenus`,
     author: `@Atheane`,
   },
   plugins: [
